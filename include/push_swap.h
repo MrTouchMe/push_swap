@@ -6,7 +6,7 @@
 /*   By: dgiurgev <dgiurgev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 16:16:52 by dgiurgev          #+#    #+#             */
-/*   Updated: 2024/02/19 18:00:53 by dgiurgev         ###   ########.fr       */
+/*   Updated: 2024/02/19 19:37:59 by dgiurgev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ typedef struct s_stack_node
 }						t_stack_node;
 
 void					stack_init(t_stack_node *a[], char *argv[]);
+long					ft_atol(const char *str);
 
 #endif
