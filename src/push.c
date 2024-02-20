@@ -1,30 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dgiurgev <dgiurgev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/13 16:15:58 by dgiurgev          #+#    #+#             */
-/*   Updated: 2024/02/20 17:20:53 by dgiurgev         ###   ########.fr       */
+/*   Created: 2024/02/20 16:24:13 by dgiurgev          #+#    #+#             */
+/*   Updated: 2024/02/20 19:25:45 by dgiurgev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-int	main(int argc, char *argv[])
+// (push a)
+// Take the first element at the top of b and put it at the top of a.
+// Do nothing if b is empty.
+void	pa(t_stack_node *a[], t_stack_node *b[])
 {
-	t_stack_node	*a;
-	t_stack_node	*b;
+	return ;
+}
 
-	a = NULL;
-	b = NULL;
-	if (argc <= 2)
+// (push b)
+// Take the first element at the top of a and put it at the top of b.
+// Do nothing if a is empty.
+void	pb(t_stack_node *a[], t_stack_node *b[])
+{
+	t_stack_node *tmp;
+
+	if (*a)
 	{
-		write(2, "Not enough arguments\n", 22);
-		// printf("Not enough arguments\n");
-		return (1);
+		tmp = *a;
+		*a = (*a)->next;
+		tmp->next = *b;
+		*b = tmp;
 	}
-	stack_init(&a, argv + 1);
-	return (0);
 }

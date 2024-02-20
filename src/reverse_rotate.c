@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dgiurgev <dgiurgev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/13 16:15:58 by dgiurgev          #+#    #+#             */
-/*   Updated: 2024/02/20 17:20:53 by dgiurgev         ###   ########.fr       */
+/*   Created: 2024/02/20 16:23:19 by dgiurgev          #+#    #+#             */
+/*   Updated: 2024/02/20 18:46:29 by dgiurgev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-int	main(int argc, char *argv[])
+// (reverse rotate a)
+// Shift down all elements of stack a by 1.
+// The last element becomes the first one.
+void	rra(t_stack_node *a[])
 {
-	t_stack_node	*a;
-	t_stack_node	*b;
+	return ;
+}
+//  (reverse rotate b)
+// Shift down all elements of stack b by 1.
+// The last element becomes the first one.
+void	rrb(t_stack_node *b[])
+{
+	rra(&b);
+}
 
-	a = NULL;
-	b = NULL;
-	if (argc <= 2)
-	{
-		write(2, "Not enough arguments\n", 22);
-		// printf("Not enough arguments\n");
-		return (1);
-	}
-	stack_init(&a, argv + 1);
-	return (0);
+// rra and rrb at the same time.
+void	rrr(t_stack_node *a[], t_stack_node *b[])
+{
+	rra(&a);
+	rrb(&b);
 }
