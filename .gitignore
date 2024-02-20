@@ -1,0 +1,10 @@
+bin
+lib/libft/bin
+lib/ft_printf/bin
+lib/get_next_line/bin
+*.o
+*.a
+*.out
+.vscode
+.DS_Store
+push_swap
