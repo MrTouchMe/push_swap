@@ -6,7 +6,7 @@
 /*   By: dgiurgev <dgiurgev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:39:21 by dgiurgev          #+#    #+#             */
-/*   Updated: 2024/02/23 21:24:22 by dgiurgev         ###   ########.fr       */
+/*   Updated: 2024/02/23 22:25:31 by dgiurgev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	stack_init(t_stack_node *a[], char *argv[])
 	i = 0;
 	while (argv[i])
 	{
-		nbr = atol(argv[i]);
+		nbr = ft_atol(argv[i]);
 		new_node = malloc(sizeof(t_stack_node));
 		if (!new_node)
 			return ;

@@ -6,7 +6,7 @@
 #    By: dgiurgev <dgiurgev@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/13 16:16:01 by dgiurgev          #+#    #+#              #
-#    Updated: 2024/02/19 18:10:16 by dgiurgev         ###   ########.fr        #
+#    Updated: 2024/02/23 22:52:00 by dgiurgev         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,4 +50,4 @@ fclean:			clean
 
 re:				fclean all
 
-.PHONY : all clean fclea re
+.PHONY : all clean fclean re
