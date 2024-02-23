@@ -6,7 +6,7 @@
 /*   By: dgiurgev <dgiurgev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 16:23:19 by dgiurgev          #+#    #+#             */
-/*   Updated: 2024/02/20 18:46:29 by dgiurgev         ###   ########.fr       */
+/*   Updated: 2024/02/23 21:22:43 by dgiurgev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ void	rra(t_stack_node *a[])
 {
 	return ;
 }
+
 //  (reverse rotate b)
 // Shift down all elements of stack b by 1.
 // The last element becomes the first one.

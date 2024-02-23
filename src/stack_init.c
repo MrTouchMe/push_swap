@@ -6,7 +6,7 @@
 /*   By: dgiurgev <dgiurgev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:39:21 by dgiurgev          #+#    #+#             */
-/*   Updated: 2024/02/20 17:31:09 by dgiurgev         ###   ########.fr       */
+/*   Updated: 2024/02/23 21:24:22 by dgiurgev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	stack_init(t_stack_node *a[], char *argv[])
 {
-	long	nbr;
-	int		i;
-	t_stack_node *new_node;
+	long			nbr;
+	int				i;
+	t_stack_node	*new_node;
 
 	i = 0;
 	while (argv[i])

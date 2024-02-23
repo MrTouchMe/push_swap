@@ -6,7 +6,7 @@
 /*   By: dgiurgev <dgiurgev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 16:24:13 by dgiurgev          #+#    #+#             */
-/*   Updated: 2024/02/20 19:25:45 by dgiurgev         ###   ########.fr       */
+/*   Updated: 2024/02/23 21:20:38 by dgiurgev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // (push a)
 // Take the first element at the top of b and put it at the top of a.
 // Do nothing if b is empty.
-void	pa(t_stack_node *a[], t_stack_node *b[])
+void	ptoa(t_stack_node *a[], t_stack_node *b[])
 {
 	return ;
 }
@@ -23,9 +23,9 @@ void	pa(t_stack_node *a[], t_stack_node *b[])
 // (push b)
 // Take the first element at the top of a and put it at the top of b.
 // Do nothing if a is empty.
-void	pb(t_stack_node *a[], t_stack_node *b[])
+void	ptob(t_stack_node *a[], t_stack_node *b[])
 {
-	t_stack_node *tmp;
+	t_stack_node	*tmp;
 
 	if (*a)
 	{
