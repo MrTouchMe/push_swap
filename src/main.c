@@ -19,12 +19,8 @@ int	main(int argc, char *argv[])
 
 	a = NULL;
 	b = NULL;
-	if (1 == argc || (2 == argc && !argv[1][0]))
-		return (1);
-	// if (argc == 1)
-	// 	return (0);
-	// if (argc <= 2)
-	// 	return (write(2, "Not enough arguments\n", 22), 1);
+	if (1 == argc)
+		return (0);
 	stack_init(&a, argv + 1);
 	print_stack(a);
 	return (0);

@@ -40,6 +40,7 @@ $(BIN)/%.o:		src/%.c
 all:			$(NAME)
 
 clean:
+				@rm -rf $(BIN)
 				@cd lib/libft && make clean
 				@echo "$(COLOR_RED)Cleanup completed.$(COLOR_RESET)"
 
