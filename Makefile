@@ -6,12 +6,12 @@
 #    By: dgiurgev <dgiurgev@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/13 16:16:01 by dgiurgev          #+#    #+#              #
-#    Updated: 2024/02/23 22:52:00 by dgiurgev         ###   ########.fr        #
+#    Updated: 2024/02/25 01:18:11 by dgiurgev         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	push_swap
-CFLAGS		=	#-Wall -Werror -Wextra
+CFLAGS		=	-g -Wall# -Werror -Wextra
 CC			=	cc
 SRC			=	$(wildcard src/*.c)
 BIN			=	bin
