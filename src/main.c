@@ -22,6 +22,7 @@ int	main(int argc, char *argv[])
 	if (1 == argc)
 		return (0);
 	stack_init(&a, argv + 1);
+	sa(&a);
 	print_stack(a);
 	return (0);
 }
@@ -33,8 +34,8 @@ void	print_stack(t_stack_node *a)
 	current = a;
 	while (current != NULL)
 	{
-		printf("%d ", current->nbr);
-		current = current->next;
+	printf("%d ", current->nbr);
+	current = current->next;
 	}
 	printf("\n");
 }

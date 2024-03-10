@@ -17,7 +17,16 @@
 // Do nothing if there is only one or no elements
 void	sa(t_stack_node *a[])
 {
-	return ;
+	t_stack_node *first = *a;
+	t_stack_node *second;
+
+	if (*a && (*a)->next)
+		{
+			second = (*a)->next;
+			*a = second;
+			first->next = second->next;
+			second->next = first;
+		}
 }
 
 // (swap b)
@@ -25,7 +34,17 @@ void	sa(t_stack_node *a[])
 // Do nothing if there is only one or no elements.
 void	sb(t_stack_node *b[])
 {
-	sa(&b);
+	t_stack_node *first = *b;
+	t_stack_node *second;
+
+
+	if (*b && (*b)->next)
+		{
+			*b = first->next;
+			first->next = (*b)->next;
+			(*b)->next = first;
+		}
+
 }
 
 // sa and sb at the same time.
