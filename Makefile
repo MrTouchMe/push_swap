@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME		=	push_swap
-CFLAGS		=	-g -Wall# -Werror -Wextra
+CFLAGS		=	-g #-Wall -Werror -Wextra
 CC			=	cc
 SRC			=	$(wildcard src/*.c)
 BIN			=	bin
@@ -36,8 +36,6 @@ $(BIN)/%.o:		src/%.c
 				@mkdir -p $(BIN)
 				@$(CC) $(CFLAGS) -c $< -o $@
 				@echo "$(COLOR_GREEN)PUSH_SWAP Compilation completed: $@$(COLOR_RESET)"
-
-all:			$(NAME)
 
 clean:
 				@rm -rf $(BIN)
