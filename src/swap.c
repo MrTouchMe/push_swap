@@ -50,6 +50,6 @@ void	sb(t_stack_node *b[])
 // sa and sb at the same time.
 void	ss(t_stack_node *a[], t_stack_node *b[])
 {
-	sa(&a);
-	sb(&b);
+	sa(a);
+	sb(b);
 }

@@ -17,7 +17,20 @@
 // The last element becomes the first one.
 void	rra(t_stack_node *a[])
 {
-	return ;
+	t_stack_node *previous = NULL;
+	t_stack_node *last = *a;
+
+	if (*a && (*a)->next)
+	{
+		while (last->next)
+		{
+			previous = last;
+			last = last->next;
+		}
+		previous->next = NULL;
+		last->next = *a;
+		*a = last;
+	}
 }
 
 //  (reverse rotate b)
@@ -25,12 +38,26 @@ void	rra(t_stack_node *a[])
 // The last element becomes the first one.
 void	rrb(t_stack_node *b[])
 {
-	rra(&b);
+	
+	t_stack_node *previous = NULL;
+	t_stack_node *last = *b;
+
+	if (*b && (*b)->next)
+	{
+		while (last->next)
+		{
+			previous = last;
+			last = last->next;
+		}
+		previous->next = NULL;
+		last->next = *b;
+		*b = last;
+	}
 }
 
 // rra and rrb at the same time.
 void	rrr(t_stack_node *a[], t_stack_node *b[])
 {
-	rra(&a);
-	rrb(&b);
+	rra(a);
+	rrb(b);
 }

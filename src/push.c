@@ -17,7 +17,15 @@
 // Do nothing if b is empty.
 void	ptoa(t_stack_node *a[], t_stack_node *b[])
 {
-	return ;
+	t_stack_node	*tmp;
+
+	if (*b)
+	{
+		tmp = *b;
+		*b = (*b)->next;
+		tmp->next = *a;
+		*a= tmp;
+	}
 }
 
 // (push b)
